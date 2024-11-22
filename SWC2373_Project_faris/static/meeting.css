@@ -1,0 +1,212 @@
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #2f2f2f; /* dark gray */
+    color: #fff; /* white */
+}
+
+#header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 20px;
+    background-color: #4c3f2c; /* dark brown */
+    color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+#logo-container {
+    flex: 1;
+    text-align: left;
+}
+
+#logo {
+    height: 60px;
+}
+
+#welcome-container {
+    flex: 2;
+    text-align: center;
+}
+
+#welcome-message {
+    font-size: 1.8em;
+    margin: 0;
+}
+
+.logout-button {
+    flex: 1;
+    padding: 10px 20px;
+    background-color: #660000; /* dark red */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.logout-button:hover {
+    background-color: #8b0a1a; /* darker red */
+}
+
+#meeting-container {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 20px auto;
+}
+
+#participants-section {
+    background-color: #333; /* dark gray */
+    border: 1px solid #444; /* dark gray */
+    border-radius: 10px;
+    padding: 15px;
+    height: 450px;
+    overflow-y: auto;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+#participants-section h2 {
+    font-size: 1.4em;
+    margin-bottom: 10px;
+    color: #fff; /* white */
+}
+
+#video-sharing-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #333; /* dark gray */
+    border: 1px solid #444; /* dark gray */
+    border-radius: 10px;
+    padding: 15px;
+    height: 450px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+#video-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+#local-video,
+#remote-video {
+    width: 48%;
+    height: 180px;
+    background-color: black;
+    border-radius: 5px;
+}
+
+#sharing-screen {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100px;
+    background-color: #444; /* darker gray */
+    border: 2px dashed #666; /* lighter gray */
+    border-radius: 5px;
+    font-size: 1.2em;
+    color: #fff; /* white */
+}
+
+#chat-section {
+    background-color: #333; /* dark gray */
+    border: 1px solid #444; /* dark gray */
+    border-radius: 10px;
+    padding: 15px;
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+#messages-container {
+    flex-grow: 1;
+    overflow-y: auto;
+    margin-bottom: 10px;
+    border: 1px solid #444; /* dark gray */
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #2f2f2f; /* dark gray */
+}
+
+#chat-form {
+    display: flex;
+    gap: 10px;
+}
+
+#chat-input {
+    flex-grow: 1;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #444; /* dark gray */
+    background-color: #2f2f2f; /* dark gray */
+    color: #fff; /* white */
+}
+
+#send-message-button {
+    padding: 10px 20px;
+    background-color: #007bff; /* dark blue */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#send-message-button:hover {
+    background-color: #0056b3; /* darker blue */
+}
+
+#controls {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 20px auto;
+    background: #333; /* dark gray */
+    padding: 10px;
+    border: 1px solid #444; /* dark gray */
+    border-radius: 10px;
+    max-width: 800px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+#controls button {
+    padding:  10px 15px;
+    background-color: #444; /* dark gray */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+#controls button:hover {
+    background-color: #555; /* darker gray */
+}
+
+@media (max-width: 768px) {
+    #meeting-container {
+        grid-template-columns: 1fr;
+    }
+
+    #video-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #local-video,
+    #remote-video {
+        width: 100%;
+        height: 150px;
+    }
+
+    #controls {
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+}

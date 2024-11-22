@@ -1,0 +1,130 @@
+.form-container {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 30px;
+    background-color: #333; /* dark gray */
+    border: 1px solid #444; /* dark gray */
+    border-radius: 15px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0,  0.3);
+    text-align: center;
+}
+
+.form-container h2 {
+    margin-bottom: 20px;
+    color: #fff; /* white */
+    font-weight: bold;
+    font-size: 1.8em;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: #fff; /* white */
+    font-size: 14px;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group input[type="password"],
+.form-group select {
+    width: 100%;
+    padding: 12px;
+    font-size: 14px;
+    border: 1px solid #444; /* dark gray */
+    border-radius: 5px;
+    background-color: #2f2f2f; /* dark gray */
+    color: #fff; /* white */
+    transition: border-color 0.3s ease-in-out;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+    border-color: #007bff; /* dark blue */
+    outline: none;
+    background-color: #444; /* darker gray */
+}
+
+.form-group input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+.show-password-container label {
+    font-size: 14px;
+}
+
+.form-button {
+    width: 100%;
+    padding: 12px 0;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: #007bff; /* dark blue */
+    color: #fff; /* white */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.form-button:hover {
+    background-color: #0056b3; /* darker blue */
+}
+
+.form-message {
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+.form-message a {
+    color: #007bff; /* dark blue */
+    text-decoration: none;
+}
+
+.form-message a:hover {
+    text-decoration: underline;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #4c3f2c; /* dark brown */
+    padding: 25px;
+    color: #fff; /* white */
+    text-align: center;
+}
+
+.header .logo-container img {
+    height: 80px;
+    margin-bottom: 15px;
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 2em;
+    font-weight: bold;
+    color: #fff; /* white */
+}
+
+.error {
+    color: #721c24;
+    background-color: #f8d7da;
+    padding: 10px;
+    border: 1px solid #f5c6cb;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.success {
+    color: #155724;
+    background-color: #d4edda;
+    padding: 10px;
+    border: 1px solid #c3e6cb;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}

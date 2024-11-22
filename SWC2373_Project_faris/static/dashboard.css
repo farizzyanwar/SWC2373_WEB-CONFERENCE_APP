@@ -1,0 +1,113 @@
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #2f2f2f; /* dark gray */
+    color: #fff; /* white */
+}
+
+.dashboard-container {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #333; /* dark gray */
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+
+#logo {
+    display: block;
+    margin: 0 auto 10px;
+    height: 100px;
+}
+
+.dashboard-container h1 {
+    font-size: 2em;
+    color: #fff; /* white */
+    margin-bottom: 20px;
+}
+
+.logout-button {
+    background-color: #660000; /* dark red */
+    color: #fff; /* white */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+.logout-button:hover {
+    background-color: #8b0a1a; /* darker red */
+}
+
+.schedule-button {
+    display: inline-block;
+    text-decoration: none;
+    background-color: #333; /* dark gray */
+    color: #fff; /* white */
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1em;
+    margin: 20px 0;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.schedule-button:hover {
+    background-color: #444; /* darker gray */
+    transform: scale(1.05);
+}
+
+.meetings-section {
+    margin-top: 20px;
+    text-align: left;
+}
+
+.meetings-section h2 {
+    font-size: 1.5em;
+    color: #fff; /* white */
+    margin-bottom: 15px;
+}
+
+.meetings-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+.meetings-table th,
+.meetings-table td {
+    text-align: left;
+    padding: 10px;
+    border-bottom: 1px solid #444; /* dark gray */
+}
+
+.meetings-table th {
+    background-color: #333; /* dark gray */
+    color: #fff; /* white */
+    text-align: center;
+}
+
+.meetings-table td {
+    text-align: center;
+    background-color: #2f2f2f; /* dark gray */
+}
+
+.meetings-table tr:hover td {
+    background-color: #333; /* dark gray */
+}
+
+.join-button {
+    background-color: #007bff; /* dark blue */
+    color: #fff; /* white */
+    padding: 8px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 0.9em;
+    transition: background-color 0.3s ease;
+}
+
+.join-button:hover {
+    background-color: #0056b3; /* darker blue */
+}

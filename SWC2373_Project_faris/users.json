@@ -1,0 +1,14 @@
+{
+    "faris@gmail.com": {
+        "title": "Mr",
+        "first_name": "faris",
+        "last_name": "anwar",
+        "password": "password"
+    },
+    "a@gmail.com": {
+        "title": "Mr",
+        "first_name": "ahmad",
+        "last_name": "anwar",
+        "password": "password"
+    }
+}

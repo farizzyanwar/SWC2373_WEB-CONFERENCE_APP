@@ -1,0 +1,31 @@
+#header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #4c3f2c; /* dark brown */
+    color: white;
+    padding: 10px 20px;
+    border-bottom: 2px solid #444; /* dark gray */
+}
+
+#logo {
+    height: 80px;
+}
+
+#welcome-message {
+    font-size: 1.8em;
+    font-weight: bold;
+    color: #fff; /* white */
+}
+
+.logout-button {
+    background-color: #660000; /* dark red */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.logout-button:hover {
+    background-color: #8b0a1a; /* darker red */
+}
